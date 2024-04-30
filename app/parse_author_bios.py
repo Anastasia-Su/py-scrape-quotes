@@ -44,7 +44,8 @@ def get_bios(base_url: str) -> list[Bio]:
 
 
 def write_bio_to_csv(bio_csv_path: str) -> None:
-    base_url = os.environ.get("BASE_URL")
+    # base_url = os.environ.get("BASE_URL")
+    base_url = "https://quotes.toscrape.com/"
 
     with open(bio_csv_path, "w", encoding="utf-8", newline="") as bio_file:
         writer = csv.writer(bio_file, delimiter=";")

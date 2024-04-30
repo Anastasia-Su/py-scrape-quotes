@@ -59,7 +59,8 @@ def get_quotes(base_url: str) -> list[Quote]:
 
 
 def main(output_csv_path: str) -> None:
-    base_url = os.environ.get("BASE_URL")
+    # base_url = os.environ.get("BASE_URL")
+    base_url = "https://quotes.toscrape.com/"
 
     with open(output_csv_path, "w", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
