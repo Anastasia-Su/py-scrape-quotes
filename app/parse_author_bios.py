@@ -1,6 +1,5 @@
 import csv
 import requests
-import os
 
 from dataclasses import dataclass
 from urllib.parse import urljoin
